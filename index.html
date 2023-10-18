@@ -581,7 +581,7 @@
     </section>
     <!--====== End Portfolio ======-->
 
-    <!--====== Numbers ======-->
+    <!--====== Skills ======-->
     <div
       class="numbers pt-30 text-center pb-30"
       style="background-color: #f7f7f7"
@@ -661,7 +661,7 @@
               class="form"
               id="contact-form"
               method="post"
-              action="contact.php"
+              action="submit_form.php"
               novalidate="true"
             >
               <div class="messages"></div>
@@ -671,8 +671,8 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <input
-                        id="form_name"
                         type="text"
+                        id="name"
                         name="name"
                         placeholder="Name"
                         required="required"
@@ -683,7 +683,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <input
-                        id="form_email"
+                        id="email"
                         type="email"
                         name="email"
                         placeholder="Email"
@@ -696,7 +696,7 @@
                   <div class="col-md-12">
                     <div class="form-group">
                       <textarea
-                        id="form_message"
+                        id="message"
                         name="message"
                         placeholder="Message"
                         rows="4"
@@ -704,11 +704,9 @@
                       ></textarea>
                     </div>
 
-                    <input
-                      type="submit"
-                      value="Submit"
-                      class="buton buton-bg disabled"
-                    />
+                    <button type="submit" class="buton buton-bg disabled">
+                      Submit
+                    </button>
                   </div>
                 </div>
               </div>
